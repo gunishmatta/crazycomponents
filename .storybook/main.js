@@ -4,5 +4,15 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    '@storybook/addon-google-analytics/register',
   ],
 };
+
+
+window.STORYBOOK_GA_ID = UA-100099495-6
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-100099495-6');
+
