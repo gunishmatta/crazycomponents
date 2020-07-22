@@ -9,10 +9,10 @@ module.exports = {
 };
 
 
-Window.window.STORYBOOK_GA_ID = UA-100099495-6
-Window.window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+// Window.window.STORYBOOK_GA_ID = UA-100099495-6
+// Window.window.dataLayer = window.dataLayer || [];
+// function gtag(){dataLayer.push(arguments);}
+// gtag('js', new Date());
 
-gtag('config', 'UA-100099495-6');
+// gtag('config', 'UA-100099495-6');
 
