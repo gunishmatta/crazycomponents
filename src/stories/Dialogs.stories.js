@@ -38,7 +38,6 @@ export default {
  
  export const ScrollingLongContentDialog = () => <ScrollingLongContentDialogs onClick={action('clicked')}></ScrollingLongContentDialogs>
  
- export const SimpleDialog = () => <SimpleDialogs onClick={action('clicked')}></SimpleDialogs>
  
  export const TransitionsDialog = () => <TransitionsDialogs onClick={action('clicked')}></TransitionsDialogs>
  
