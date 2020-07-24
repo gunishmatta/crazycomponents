@@ -9,12 +9,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "downshift": "^5.4.6",
+    "fg-loadcss": "^3.1.0",
     "global": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-select": "^3.1.0",
-    "react-swipeable-views": "^0.13.9"
+    "react-swipeable-views": "^0.13.9",
+    "react-window": "^1.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,9 +42,14 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-backgrounds": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-google-analytics": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^5.3.19"
