@@ -11,6 +11,7 @@
     "downshift": "^5.4.6",
     "fg-loadcss": "^3.1.0",
     "global": "^4.4.0",
+    "material-ui-popup-state": "^1.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
