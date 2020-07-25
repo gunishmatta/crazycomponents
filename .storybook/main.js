@@ -8,8 +8,10 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-knobs/register',
     '@storybook/addon-backgrounds/register',
+    '@storybook/addon-docs',
   ],
 };
+
 
 
 // Window.window.STORYBOOK_GA_ID = UA-100099495-6
