@@ -4,12 +4,14 @@ import InsetDividers from '../components/material/Dividers/InsetDividers'
 import ListDividers from '../components/material/Dividers/ListDividers'
 import MiddleDividers from '../components/material/Dividers/MiddleDividers'
 import SubheaderDividers from '../components/material/Dividers/SubheaderDividers'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : InsetDividers,
     title : 'Dividers',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

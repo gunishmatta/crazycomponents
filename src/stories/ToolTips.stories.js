@@ -10,6 +10,7 @@ import ToolTips from '../components/material/ToolTips/ToolTips'
 import TransitionToolTips from '../components/material/ToolTips/TransitionToolTips'
 import TriggersToolTips from '../components/material/ToolTips/TriggersToolTips'
 import VariableWidthToolTips from '../components/material/ToolTips/VariableWidthToolTips'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 
@@ -17,6 +18,7 @@ export default {
     component : ToolTips,
     title : 'Tooltips',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

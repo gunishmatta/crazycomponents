@@ -6,11 +6,13 @@ import MultipleSelects from '../components/material/Selects/MultipleSelects'
 import NativeSelects from '../components/material/Selects/NativeSelects'
 import SimpleSelects from '../components/material/Selects/SimpleSelects'
 import WithDialogSelects from '../components/material/Selects/WithDialogSelects'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : SimpleSelects,
     title : 'Buttons',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

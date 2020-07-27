@@ -6,12 +6,14 @@ import CustomizedSnackBars from '../components/material/SnackBars/CustomizedSnac
 import MessageLengthSnackBars from '../components/material/SnackBars/MessageLengthSnackBars'
 import PositionedSnackBars from '../components/material/SnackBars/PositionedSnackBars'
 import SimpleSnackBars from '../components/material/SnackBars/SimpleSnackBars'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleSnackBars,
     title : 'SnackBars',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

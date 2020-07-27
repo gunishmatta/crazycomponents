@@ -11,6 +11,7 @@ import ResponsiveFullScreenDialogs from '../components/material/Dialogs/Responsi
 import ScrollingLongContentDialogs from '../components/material/Dialogs/ScrollingLongContentDialogs'
 import SimpleDialogs from '../components/material/Dialogs/SimpleDialogs'
 import TransitionsDialogs from '../components/material/Dialogs/TransitionsDialogs'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 
@@ -18,6 +19,7 @@ export default {
     component : SimpleDialogs,
     title : 'Dialogs',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

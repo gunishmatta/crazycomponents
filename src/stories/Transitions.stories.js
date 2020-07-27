@@ -5,12 +5,14 @@ import FadeTransitions from '../components/material/Transitions/FadeTransitions'
 import GrowTransitions from '../components/material/Transitions/GrowTransitions'
 import SlideTransitions from '../components/material/Transitions/SlideTransitions'
 import ZoomTransitions from '../components/material/Transitions/ZoomTransitions'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : CollapseTransitions,
     title : 'Transitions',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

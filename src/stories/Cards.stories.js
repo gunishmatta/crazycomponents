@@ -4,12 +4,14 @@ import SimpleCards from '../components/material/Cards/SimpleCards'
 import MediaCards from '../components/material/Cards/MediaCards'
 import UIControlCards from '../components/material/Cards/UIControlCards'
 import ComplexInteractionCards from '../components/material/Cards/ComplexInteractionCards'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleCards,
     title : 'Cards',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

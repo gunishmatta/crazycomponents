@@ -6,11 +6,13 @@ import CustomActionPaginationTables from '../components/material/Tables/CustomAc
 import CustomizedTables from '../components/material/Tables/CustomizedTables'
 import DenseTables from '../components/material/Tables/DenseTables'
 import SortingandSelectingTables from '../components/material/Tables/SortingandSelectingTables'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : SimpleTables,
     title : 'Tables',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
  export const SimpleTable = () => <SimpleTables onClick={action('clicked')}></SimpleTables>;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 import {action} from '@storybook/addon-actions';
 import ContainedButtons from '../components/material/Buttons/ContainedButtons'
 import ComplexButtons from '../components/material/Buttons/ComplexButtons'
@@ -8,14 +9,18 @@ import GroupedButtons from '../components/material/Buttons/GroupedButtons'
 import IconButtons from '../components/material/Buttons/IconButtons'
 import OutlinedButtons from '../components/material/Buttons/OutlinedButtons'
 import TextButtons from '../components/material/Buttons/TextButtons'
+
+
 export default {
     component : ContainedButtons,
     title : 'Buttons',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 
- export const ContainedButton = () => <ContainedButtons onClick={action('clicked')}>Contained Button</ContainedButtons>;
+ export const ContainedButton = () => <ContainedButtons onClick={action('clicked')}>
+ </ContainedButtons>;
 
  export const DifferentSizedButton = () => <DifferentSizedButtons onClick={action('clicked')}></DifferentSizedButtons>
  export const ComplexButton = () => <ComplexButtons onClick={action('clicked')}></ComplexButtons>

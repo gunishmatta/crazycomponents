@@ -10,11 +10,13 @@ import MobileStepperDots from '../components/material/Steppers/MobileStepperDots
 import MobileStepperProgressers from '../components/material/Steppers/MobileStepperProgressers'
 import MobileStepperWithCaraousels from '../components/material/Steppers/MobileStepperWithCaraousels'
 import VerticalSteppers from '../components/material/Steppers/VerticalSteppers'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : HorizontalLinears,
     title : 'Steppers',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

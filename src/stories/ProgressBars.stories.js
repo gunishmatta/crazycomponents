@@ -10,10 +10,13 @@ import LimitationsBars from '../components/material/ProgressBars/LimitationsBars
 import LinearBufferBars from '../components/material/ProgressBars/LinearBufferBars'
 import LinearIntermediateBars from '../components/material/ProgressBars/LinearIntermediateBars'
 import LinearQueryBars from '../components/material/ProgressBars/LinearQueryBars'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+
 export default {
     component : CircularDeterminateBars,
     title : 'Progress Bars',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

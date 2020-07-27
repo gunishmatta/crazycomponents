@@ -4,12 +4,14 @@ import ControlledAccordinPanels from '../components/material/ExpansionPanels/Con
 import CustomizedExpansionPanels from '../components/material/ExpansionPanels/CustomizedExpansionPanels'
 import SecondaryHeadingPanels from '../components/material/ExpansionPanels/SecondaryHeadingPanels'
 import SimpleExpansionPanels from '../components/material/ExpansionPanels/SimpleExpansionPanels';
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleExpansionPanels,
     title : 'Expansion Panels',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

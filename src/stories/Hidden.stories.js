@@ -4,12 +4,14 @@ import BreakpointDowns from '../components/material/Hidden/BreakpointDowns'
 import BreakpointOnlyy from '../components/material/Hidden/BreakpointOnlyy'
 import BreakpointUps from '../components/material/Hidden/BreakpointUps'
 import IntegrationwithGrids from '../components/material/Hidden/IntegrationwithGrids'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : BreakpointDowns,
     title : 'Hidden',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

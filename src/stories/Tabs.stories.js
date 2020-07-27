@@ -9,11 +9,13 @@ import IconTabs from '../components/material/Tabs/IconTabs'
 import NavTabs from '../components/material/Tabs/NavTabs'
 import PreventScrollButtons from '../components/material/Tabs/PreventScrollButtons'
 import WrappedLabels from '../components/material/Tabs/WrappedLabels'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : SimpleTabs,
     title : 'Tabs',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

@@ -2,6 +2,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -17,11 +18,11 @@ export default function ContainedButtons() {
 
   return (
     <div>
-      <Button variant="contained" className={classes.button}>
-        Default
+      <Button variant="contained" className={classes.button}disabled={boolean("Disabled", false)}>
+      {text("Label", "Contained Button")}
       </Button>
       <Button variant="contained" color="primary" className={classes.button}>
-        Primary
+     Primary
       </Button>
       <Button variant="contained" color="secondary" className={classes.button}>
         Secondary

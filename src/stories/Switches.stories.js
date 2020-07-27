@@ -5,12 +5,14 @@ import LabelPlacements from '../components/material/Switches/LabelPlacements'
 import SimpleSwitches from '../components/material/Switches/SimpleSwitches'
 import SwitcheswithFormGroups from '../components/material/Switches/SwitcheswithFormGroups'
 import SwitcheswithFormLabels from '../components/material/Switches/SwitcheswithFormLabels'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleSwitches,
     title : 'Switches',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

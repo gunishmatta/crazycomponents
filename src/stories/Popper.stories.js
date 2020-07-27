@@ -5,12 +5,14 @@ import PopupStateHelpers from '../components/material/Poppers/PopupStateHelpers'
 import PositionedPoppers from '../components/material/Poppers/PositionedPoppers'
 import SimplePoppers from '../components/material/Poppers/SimplePoppers'
 import WithoutTransitionPoppers from '../components/material/Poppers/WithoutTransitionPoppers'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimplePoppers,
     title : 'Poppers',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

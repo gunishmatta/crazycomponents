@@ -8,11 +8,13 @@ import GridwithBreakpoints from '../components/material/Grids/GridwithBreakpoint
 import NegativeMargins from '../components/material/Grids/NegativeMargins'
 import NestedGrids from '../components/material/Grids/NestedGrids'
 import Spacings from '../components/material/Grids/Spacings'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : AutoLayouts,
     title : 'Grids',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

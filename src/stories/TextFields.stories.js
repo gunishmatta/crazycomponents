@@ -9,11 +9,13 @@ import OutlinedAdornments from '../components/material/TextFields/OutlinedAdornm
 import OutlinedFields from '../components/material/TextFields/OutlinedFields'
 import TextFields from '../components/material/TextFields/TextFields'
 import WithIconFields from '../components/material/TextFields/WithIconFields'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 export default {
     component : TextFields,
     title : 'Text Fields',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

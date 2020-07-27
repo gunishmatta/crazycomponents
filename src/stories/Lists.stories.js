@@ -12,12 +12,14 @@ import PinnedSubheaderLists from '../components/material/Lists/PinnedSubheaderLi
 import SelectedListItems from '../components/material/Lists/SelectedListItems'
 import VirtualisedLists from '../components/material/Lists/VirtualisedLists'
 import SwitchLists from '../components/material/Lists/SwitchLists'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleLists,
     title : 'Lists',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

@@ -3,12 +3,14 @@ import {action} from '@storybook/addon-actions';
 import RadioGroups from '../components/material/RadioButtons/RadioGroups'
 import RadioLabelPlacements from '../components/material/RadioButtons/RadioLabelPlacements'
 import StandaloneRadioButtons from '../components/material/RadioButtons/StandaloneRadioButtons'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : RadioGroups,
     title : 'Radio Buttons',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 

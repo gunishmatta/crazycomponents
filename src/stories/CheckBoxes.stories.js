@@ -4,12 +4,14 @@ import CheckBoxwithFormGroups from '../components/material/CheckBoxes/CheckBoxwi
 import FormControlLabels from '../components/material/CheckBoxes/FormControlLabels'
 import LabelPlacements from '../components/material/CheckBoxes/LabelPlacements'
 import SimpleCheckBoxes from '../components/material/CheckBoxes/SimpleCheckBoxes'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
 
 
 export default {
     component : SimpleCheckBoxes,
     title : 'CheckBoxes',
     excludeStories: /.*Data$/,
+    decorators: [withKnobs],
 };
 
 
