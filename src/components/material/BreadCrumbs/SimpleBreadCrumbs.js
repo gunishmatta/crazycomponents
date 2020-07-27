@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-
+import {text} from '@storybook/addon-knobs'
 const useStyles = makeStyles(theme => ({
   root: {
     justifyContent: 'center',
@@ -23,28 +23,30 @@ function handleClick(event) {
 
 export default function SimpleBreadcrumbs() {
   const classes = useStyles();
-
+  const headername = text("Main Heading", "Material-UI");
+const subheader = text("Sub Heading","Core");
+const breadcrumbheader = text("BreadCrumb Heading","BreadCrumb");
   return (
     <div className={classes.root}>
       <Paper elevation={0} className={classes.paper}>
         <Breadcrumbs aria-label="Breadcrumb">
           <Link color="inherit" href="/" onClick={handleClick}>
-            Material-UI
+            {headername}
           </Link>
           <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            Core
+            {subheader}
           </Link>
-          <Typography color="textPrimary">Breadcrumb</Typography>
+          <Typography color="textPrimary">{breadcrumbheader}</Typography>
         </Breadcrumbs>
       </Paper>
       <br />
       <Paper elevation={0} className={classes.paper}>
         <Breadcrumbs aria-label="Breadcrumb">
           <Link color="inherit" href="/" onClick={handleClick}>
-            Material-UI
+            {headername}
           </Link>
           <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            Core
+            {subheader}
           </Link>
           <Link
             color="textPrimary"
@@ -52,7 +54,7 @@ export default function SimpleBreadcrumbs() {
             onClick={handleClick}
             aria-current="page"
           >
-            Breadcrumb
+            {breadcrumbheader}
           </Link>
         </Breadcrumbs>
       </Paper>
