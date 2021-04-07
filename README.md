@@ -12,5 +12,5 @@ To Run this in your local machine Follow these steps:
 **
 Using Knobs
 Some Components have knobs enabled so you can directly change many properties like headings right away from storybook**
-![image](https://user-images.githubusercontent.com/33680363/113901618-aa4a3c80-97ec-11eb-9f62-3c370a72b1a5.png)
+![image](https://user-images.githubusercontent.com/33680363/113901936-f85f4000-97ec-11eb-83cd-af99cdf96dd5.png)
 
